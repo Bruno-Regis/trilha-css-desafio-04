@@ -1,0 +1,189 @@
+@import url(reset.css);
+
+h1{
+    font-family: 'Luckiest guy', sans-serif;
+}
+
+/* Working on Header */
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    min-height: 505px;
+    padding: 70px 50px;
+    background-image: url(../img/Header\ Background-p.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-content > h1{
+    font-size: 32px;
+    height: 400;
+    color: white;
+    align-self: flex-start;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: left;
+    width: 290px;
+}
+
+.header-content > p{
+    font-size: 16px;
+    height: 400;
+    color: white;
+    line-height: 1.5;
+    text-align:justify;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.buttons button:first-child{
+    color: rgba(35, 39, 42, 1);
+    background: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 28px;
+    width: 380px;
+    height: 54px;
+}
+
+.buttons button:last-child{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(35, 39, 42, 1);
+    border-radius: 28px;
+    border: none;
+    width: 380px;
+    height: 54px;
+}
+
+/* Starting working on sections */
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 27px;
+    min-height: 570px;
+    padding: 40px 24px;
+}
+
+.section-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 27px;
+    max-width: 329px;
+}
+
+section:nth-of-type(1), section:nth-of-type(3){
+    background-color: rgba(246, 246, 246, 1);
+}
+
+section:nth-of-type(2), section:nth-of-type(2){
+    background-color: white
+}
+
+.section-text > h1{
+    width: 376px;
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+.section-text > h2{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.25;
+    color: rgba(35, 39, 42, 1);
+    width: 351px;
+}
+
+.section-text > p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(35, 39, 42, 1);
+    min-width: 351px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    min-height: 140px;
+    background-color: rgba(35, 39, 42, 1);
+}
+
+
+/* Reponsivity */
+
+@media screen and (min-width: 650px){
+    .header-content{
+        background-image: url(../img/Header\ Background.png);
+    }
+    .header-content > h1{
+        align-self: center;
+        width: 350px;
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+    
+    .header-content > p{
+        width: 757px;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+    
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        gap: 27px;
+        min-height: 570px;
+        padding: 40px 24px;
+    }
+
+    #last-section{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    #last-section .section-text{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    #last-section p{
+        text-align: center;
+        width: 50vw;
+    }
+    .section-text > h1{
+        width: 608px;
+        font-size: 40px;
+        text-align: center;
+    }
+    .section-text > h2{
+        font-size: 40px;
+        word-wrap: normal;
+    }
+    .section-text{
+        width: 329px;
+    }
+}
