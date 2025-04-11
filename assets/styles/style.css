@@ -17,6 +17,7 @@ h1{
     background-image: url(../img/Header\ Background-p.png);
     background-size: cover;
     background-repeat: no-repeat;
+    margin: auto;
 }
 
 .header-content > h1{
